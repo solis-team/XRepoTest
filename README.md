@@ -4,8 +4,6 @@
 
 ### Benchmarking Multilingual Repository-Level Unit Test Generation for Large Language Models
 
-**Accepted to EMNLP 2026 Main Conference** 📄
-
 <a href="#"><img alt="EMNLP 2026" src="https://img.shields.io/badge/📰-EMNLP_2026_Main-9cf.svg"></a>
 <a href="#"><img alt="Python" src="https://img.shields.io/badge/python-3.10+-blue.svg"></a>
 <a href="#"><img alt="License" src="https://img.shields.io/badge/license-MIT-green.svg"></a>
@@ -21,7 +19,7 @@
 
 ---
 
-XRepoTest is a **cross-repository benchmark** for evaluating how well large language models generate unit tests for **real-world functions across five programming languages**. It provides an end-to-end pipeline — repository crawling, prompt construction, LLM response generation, and **Docker-based execution** — that compiles, runs, and measures the coverage of every generated test against the *actual* source code.
+XRepoTest is a **repository-level benchmark** for evaluating how well large language models generate unit tests for **real-world functions across five programming languages**. It provides an end-to-end pipeline — repository crawling, prompt construction, LLM response generation, and **Docker-based execution** — that compiles, runs, and measures the coverage of every generated test against the *actual* source code.
 
 Unlike single-language or synthetic benchmarks, XRepoTest evaluates repository-level test generation in the wild, letting you compare models, prompting strategies, and retrieval-augmented contexts under uniform, real execution conditions.
 
