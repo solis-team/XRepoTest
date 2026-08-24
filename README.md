@@ -17,11 +17,6 @@
 <a href="#"><img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white"></a>
 <a href="#"><img alt="Ruby" src="https://img.shields.io/badge/Ruby-CC342D?logo=ruby&logoColor=white"></a>
 
-<br>
-<br>
-
-**Dung Le Quang**, **Dong Cao Van**, **Nam Le Hai**, **Linh Ngo Van**, **Thi-Mai-Anh Bui**, **Phuong T. Nguyen**
-
 </div>
 
 ---
