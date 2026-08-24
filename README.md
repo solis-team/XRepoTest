@@ -68,21 +68,8 @@ For each language, XRepoTest **crawls public repositories to extract function-le
 
 ## 🏗️ Pipeline at a glance
 
-```
-                ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
- repo corpus ──▶│   crawler    │────▶│      LSP     │────▶│      RAG     │
- (5 languages)  │  extraction  │     │  enrichment  │     │   retrieval  │
-                └──────────────┘     └──────────────┘     └──────────────┘
-                                                                            │
-                ┌───────────────────────────────────────────────────────────┘
-                ▼
- ┌──────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
- │    prompts   │────▶│   responses  │────▶│  preprocess  │────▶│     eval     │
- │  construction│     │   (LLM API)  │     │  → JSONL     │     │  (Docker)    │
- └──────────────┘     └──────────────┘     └──────────────┘     └──────┬───────┘
-                                                                       │
-                                                          summarize / repair / analyze
-```
+![pipeline](xrepotest_pipeline.png)
+> **Overview of the XRepoTest benchmark construction and context-aware evaluation workflow, covering repository selection, parsing, filtering, unit-test execution, and context-aware prompt construction.**
 
 ---
 
