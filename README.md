@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# XRepoTest
-=======
 <div align="center">
 
 # 🧪 XRepoTest
@@ -19,6 +16,11 @@
 <a href="#"><img alt="Julia" src="https://img.shields.io/badge/Julia-9558B2?logo=julia&logoColor=white"></a>
 <a href="#"><img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white"></a>
 <a href="#"><img alt="Ruby" src="https://img.shields.io/badge/Ruby-CC342D?logo=ruby&logoColor=white"></a>
+
+<br>
+<br>
+
+**Dung Le Quang**, **Dong Cao Van**, **Nam Le Hai**, **Linh Ngo Van**, **Thi-Mai-Anh Bui**, **Phuong T. Nguyen**
 
 </div>
 
@@ -339,7 +341,7 @@ If you use XRepoTest in your research, please cite:
 ```bibtex
 @inproceedings{xrepotest2026,
   title     = {{XRepoTest}: Benchmarking Multilingual Repository-Level Unit Test Generation for Large Language Models},
-  author    = {XRepoTest Team},
+  author    = {Le Quang, Dung and Cao Van, Dong and Le Hai, Nam and Ngo Van, Linh and Bui, Thi-Mai-Anh and Nguyen, Phuong T.},
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
   year      = {2026},
   note      = {Main Conference}
@@ -352,5 +354,4 @@ If you use XRepoTest in your research, please cite:
 
 ## 📄 License
 
-MIT — as declared in [`pyproject.toml`](pyproject.toml).
->>>>>>> c6aee8d (udpate)
+MIT — see the [LICENSE](LICENSE) file.

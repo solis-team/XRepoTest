@@ -10,7 +10,12 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "xrepotest Team"}
+    {name = "Dung Le Quang"},
+    {name = "Dong Cao Van"},
+    {name = "Nam Le Hai"},
+    {name = "Linh Ngo Van"},
+    {name = "Thi-Mai-Anh Bui"},
+    {name = "Phuong T. Nguyen"},
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
