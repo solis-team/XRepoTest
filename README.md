@@ -84,8 +84,6 @@ For each language, XRepoTest **crawls public repositories to extract function-le
                                                           summarize / repair / analyze
 ```
 
-`xrepotest run` chains the whole flow: **prompts → responses → preprocess → eval**.
-
 ---
 
 ## 📦 Installation
@@ -342,11 +340,3 @@ If you use XRepoTest in your research, please cite:
   note      = {Main Conference}
 }
 ```
-
-> TODO: replace with final arXiv link / bibtex once released.
-
----
-
-## 📄 License
-
-MIT — see the [LICENSE](LICENSE) file.
