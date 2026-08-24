@@ -112,7 +112,7 @@ pip install -e ".[dev]"
 ### Benchmark data
 
 The XRepoTest datasets are published to the HuggingFace Hub as a single dataset repo
-(`lqdunxgx2005/xrepotest`) and downloaded with the bundled fetch script. Run this once
+(`solis-soict/xrepotest`) and downloaded with the bundled fetch script. Run this once
 after cloning — it places each artifact where the pipeline expects it:
 
 ```bash
@@ -121,7 +121,7 @@ python scripts/fetch_data.py                       # fetch all groups (base, lsp
 ```
 
 The fetch script downloads from one configurable repo (default
-`lqdunxgx2005/xrepotest`, or set `XREPOTEST_HF_REPO=<org>/xrepotest` for a mirror):
+`solis-soict/xrepotest`, or set `XREPOTEST_HF_REPO=<org>/xrepotest` for a mirror):
 
 | Remote folder | Local destination | Modes it enables |
 |---------------|-------------------|------------------|

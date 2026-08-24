@@ -17,7 +17,7 @@ the published dataset from a single HF dataset repo and places each artifact whe
 or the evaluation Docker images from scratch.
 
 Usage:
-    python scripts/fetch_data.py [--repo lqdunxgx2005/xrepotest] [--lang go] [--group all]
+    python scripts/fetch_data.py [--repo solis-soict/xrepotest] [--lang go] [--group all]
     python scripts/fetch_data.py --group base          # only core task items
     python scripts/fetch_data.py --lang rust           # only rust files across all groups
 
@@ -80,8 +80,8 @@ def shutil_copy(src: str, dst: Path) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--repo", default=os.environ.get("XREPOTEST_HF_REPO", "lqdunxgx2005/xrepotest"),
-                    help="HF dataset repo id (default: lqdunxgx2005/xrepotest or $XREPOTEST_HF_REPO)")
+    ap.add_argument("--repo", default=os.environ.get("XREPOTEST_HF_REPO", "solis-soict/xrepotest"),
+                    help="HF dataset repo id (default: solis-soict/xrepotest or $XREPOTEST_HF_REPO)")
     ap.add_argument("--group", choices=["base", "lsp", "rag", "all"], default="all")
     ap.add_argument("--lang", choices=LANGS, default=None, help="Fetch only one language")
     ap.add_argument("--force", action="store_true", help="Overwrite existing local files")
