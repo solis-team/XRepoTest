@@ -1,0 +1,178 @@
+# ====================================
+# OS and editor files
+# ====================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.history/
+.claude/
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ====================================
+# Python
+# ====================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Packaging / build
+build/
+dist/
+sdist/
+wheels/
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# Test and type-check caches
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.ruff_cache/
+
+# Virtual environments / local secrets
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.api_key
+/keys/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ====================================
+# Logs and temp files
+# ====================================
+*.log
+*.err
+*.out
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.bak2
+*.csv
+*.png
+*.pdf
+*.cache
+.cache/
+__cache__/
+nohup.out
+
+# ====================================
+# Node (if used by tooling)
+# ====================================
+node_modules/
+.npm/
+.yarn/
+.pnp.*
+
+# ====================================
+# Archives
+# ====================================
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.bz2
+*.xz
+
+# ====================================
+# Language-specific local artifacts
+# ====================================
+**/target/
+*.dylib
+*.dll
+*.sh
+!.devcontainer/*.sh
+*.jsonl
+*.json
+
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+Manifest.toml
+
+# ====================================
+# Project datasets and generated artifacts
+# ====================================
+/data/
+/repo_data/
+/datasets/
+/xrepotest_dataset/
+/paper/
+
+/src/experiments/evaluation/data/decoding_responses/
+/src/experiments/evaluation/data/reports/
+/src/experiments/evaluation/data/responses/
+/src/experiments/evaluation/data/results/
+/src/experiments/evaluation/data/tests/
+/src/experiments/evaluation/data/agentic_scratch/
+
+/src/experiments/evaluation/generation/lsp_results/
+/src/experiments/evaluation/generation/rag_results/
+
+/src/experiments/analysis/**/output/
+/src/experiments/analysis/**/cache/
+/src/experiments/analysis/**/temp/
+/src/experiments/analysis/overlap_analysis/*.csv
+
+/src/experiments/standalone/generated_tests/
+
+/src/xrepotest/data/
+/src/xrepotest/crawler/extracted/
+/src/xrepotest/lsp/data/
+/src/xrepotest/lsp/lsp_results/
+/src/xrepotest/rag/data/
+/src/xrepotest/rag/xrepotest_input/
+/src/xrepotest/environments/*/xrepotest_input/
+/src/xrepotest/environments/*/xrepotest_dataset/
+/src/xrepotest/environments/xrepotest/*.jsonl
+
+# Copilot-local metadata
+/.github/copilot-instructions.md
+/.github/instructions/
+
+inspect.ipynb
+/responses/
+/xrepotest_backup/
+/xrepotest_backup2/
+/backup/
+/backup_xrepotest_data/
+/.antigravitycli/

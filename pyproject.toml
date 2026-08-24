@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xrepotest"
+version = "0.1.0"
+description = "A framework for cross-repository test generation and evaluation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "xrepotest Team"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # Core
+    "numpy>=1.24.0",
+    "tqdm>=4.65.0",
+    "datasets>=2.14.0",
+    "scikit-learn>=1.3.0",
+
+    # Parsing (used by evaluation prompt generation, not just LSP)
+    "tree-sitter>=0.25.0",
+    "tree-sitter-go",
+    "tree-sitter-rust",
+    "tree-sitter-ruby",
+    "tree-sitter-php",
+    "tree-sitter-julia",
+
+    # Async / Networking
+    "aiohttp>=3.9.0",
+
+    # Generation (Cogitator)
+    "openai>=1.0.0",
+    "google-generativeai>=0.3.0",
+    "ollama>=0.4.0",
+    "tiktoken>=0.7.0",
+    "pydantic>=2.0.0",
+
+    # Statistical Analysis
+    "scipy>=1.9.0",
+    "statsmodels>=0.13.0",
+
+    # Visualization
+    "matplotlib-venn>=0.11.9",
+]
+
+[project.optional-dependencies]
+# LSP-based data construction (LSP enrichment of crawled records).
+lsp = [
+    "psutil>=5.9.0",
+]
+
+# RAG-based data construction (BM25 / dense retrieval pipelines).
+rag = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "accelerate>=1.5.0",
+    "rank-bm25>=0.2.2",
+    "sentence-transformers>=5.1.0",
+]
+
+dev = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "pylint>=3.0.0",
+    "mypy>=1.0.0",
+    "ruff>=0.1.0",
+    "jupyter>=1.0.0",
+    "ipykernel>=6.25.0",
+]
+
+[project.scripts]
+xrepotest = "xrepotest.cli:main"
+xrepotest-run = "xrepotest.cli:legacy_run_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["xrepotest*", "experiments*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests", "src"]
