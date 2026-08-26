@@ -3,7 +3,6 @@
     <img src="assets/xrepotest_banner.png"/>
     <br>
 <p>
-<div align="center">
 
 <div align="center">
 
