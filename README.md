@@ -67,7 +67,7 @@ For each language, XRepoTest **crawls public repositories to extract function-le
 
 ## 🏗️ Pipeline at a glance
 
-![pipeline](asset/xrepotest_pipeline.png)
+![pipeline](assets/xrepotest_pipeline.png)
 > **Overview of the XRepoTest benchmark construction and context-aware evaluation workflow, covering repository selection, parsing, filtering, unit-test execution, and context-aware prompt construction.**
 
 ---
@@ -98,7 +98,7 @@ pip install -e ".[dev]"
 ### Benchmark data
 
 The XRepoTest datasets are published to the HuggingFace Hub as a single dataset repo
-(`solis-soict/xrepotest`) and downloaded with the bundled fetch script. Run this once
+[`solis-soict/xrepotest`](https://huggingface.co/datasets/solis-soict/xrepotest) and downloaded with the bundled fetch script. Run this once
 after cloning — it places each artifact where the pipeline expects it:
 
 ```bash
