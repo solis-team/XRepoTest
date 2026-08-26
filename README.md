@@ -2,7 +2,7 @@
     <br>
     <img src="assets/xrepotest.svg" width="550"/>
     <br>
-    <b style="font-size:20px;">Benchmarking Multilingual Repository-Level Unit Test Generation for Large Language Models</b>
+    <b style="font-size:50px;">Benchmarking Multilingual Repository-Level Unit Test Generation for Large Language Models</b>
 <p>
 
 <div align="center">
