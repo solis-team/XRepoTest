@@ -24,8 +24,8 @@
 </div>
 
 ---
-## Overview
-XRepoTest is a **repository-level benchmark** for evaluating how well large language models generate unit tests for **real-world functions across five programming languages**. It provides an end-to-end pipeline: repository crawling, prompt construction, LLM response generation, and **Docker-based execution**; that compiles, runs, and measures the coverage of every generated test against the *actual* source code.
+## 🎯 Overview
+XRepoTest is a **repository-level benchmark** for evaluating how well large language models generate unit tests for **real-world functions across 5 programming languages**. It provides an end-to-end pipeline: repository crawling, prompt construction, LLM response generation, and **Docker-based execution**; that compiles, runs, and measures the coverage of every generated test against the *actual* source code.
 
 Unlike single-language or synthetic benchmarks, XRepoTest evaluates repository-level test generation in the wild, letting you compare models, prompting strategies, and retrieval-augmented contexts under uniform, real execution conditions.
 
