@@ -226,8 +226,6 @@ All subcommands expose `--help`; `xrepotest --help` lists the full surface.
 | BM25 retrieval | BM25-retrieved context (`ws<window>_k<top_k>`) | `rag_bm25` |
 | Dense retrieval | Dense/LM-retrieved context (`ws<window>_k<top_k>`) | `rag_dense` |
 
-RAG sweep directory naming follows `rag_bm25_ws<context_size>_k<top_k>` and `rag_dense_ws<context_size>_k<top_k>`.
-
 ---
 
 ## ⚙️ Configuration
