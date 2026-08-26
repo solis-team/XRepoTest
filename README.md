@@ -37,7 +37,7 @@ Unlike single-language or synthetic benchmarks, XRepoTest evaluates repository-l
 - **4 research axes you can ablate.** `standard` → `lsp_context` → `file_context` → `rag_bm25` / `rag_dense` prompt modes.
 - **Mutation testing** (`go`, `rust`, `ruby`) to measure test *quality*, not just pass rate.
 - **Iterative repair** and **agentic** modes for studying self-repair and agent-driven test generation.
-- **Post-run analysis suite** — data leakage, domain/error analysis, significance testing, overlap and correlation analysis.
+- **Post-run analysis suite** data leakage, domain/error analysis, significance testing, overlap and correlation analysis.
 
 ---
 
@@ -103,7 +103,7 @@ pip install -e ".[dev]"
 
 The XRepoTest datasets are published to the HuggingFace Hub as a single dataset repo
 [`solis-soict/xrepotest`](https://huggingface.co/datasets/solis-soict/xrepotest) and downloaded with the bundled fetch script. Run this once
-after cloning — it places each artifact where the pipeline expects it:
+after cloning, it places each artifact where the pipeline expects it:
 
 ```bash
 pip install "huggingface_hub[cli]"
@@ -207,9 +207,9 @@ xrepotest repair --lang <lang> --mode <mode> --model <model>
 
 ### Additional subcommands
 
-- **Iterative repair pre-processing** — `xrepotest repair-preprocess` reformats failing
+- **Iterative repair pre-processing**:  `xrepotest repair-preprocess` reformats failing
   results before a repair attempt (see `--help`).
-- **Agentic evaluation** — `xrepotest agentic` runs agent-driven / Claude Code test
+- **Agentic evaluation**: `xrepotest agentic` runs agent-driven / Claude Code test
   generation over a task subset (see `--help`); it needs a `task_subset_<lang>.json`.
 
 All subcommands expose `--help`; `xrepotest --help` lists the full surface.
@@ -232,8 +232,8 @@ All subcommands expose `--help`; `xrepotest --help` lists the full surface.
 
 The API endpoint and key are **configured in `src/xrepotest/config.py`** (not read from environment variables):
 
-- `API_BASE_URL` — your OpenAI-compatible endpoint. **There is no default baked in**; set this to your provider before running `responses` / `run` (or pass `--api_base` to override it for a single run).
-- `API_KEY_FILE` — path to a plain-text file holding only the key (no quotes/newlines). The key itself lives outside the repo (`/keys/` is gitignored) so the module stays committable.
+- `API_BASE_URL` - your OpenAI-compatible endpoint. **There is no default baked in**; set this to your provider before running `responses` / `run` (or pass `--api_base` to override it for a single run).
+- `API_KEY_FILE` - path to a plain-text file holding only the key (no quotes/newlines). The key itself lives outside the repo (`/keys/` is gitignored) so the module stays committable.
 
 ```python
 # src/xrepotest/config.py
