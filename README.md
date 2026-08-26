@@ -52,8 +52,8 @@ For each language, XRepoTest **crawls public repositories to extract function-le
 | Go       | `.go`     | `go test`      | `go-mutesting` ✅ |
 | Rust     | `.rs`     | `cargo test`   | `cargo-mutants` ✅ |
 | Julia    | `.jl`     | `Test`         | — |
-| PHP      | `.php`    | `PHPUnit`      | `infection` |
-| Ruby     | `.rb`     | `RSpec`        | `mutant` |
+| PHP      | `.php`    | `PHPUnit`      | — |
+| Ruby     | `.rb`     | `RSpec`        | `mutant` ✅ |
 
 > Mutation testing is fully wired into the Docker evaluators for **Go, Rust, and Ruby** (the `--enable_mutation` flag affects only those three).
 
