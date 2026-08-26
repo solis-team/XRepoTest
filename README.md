@@ -8,7 +8,7 @@
 <a href="#"><img alt="Python" src="https://img.shields.io/badge/python-3.10+-blue.svg"></a>
 <a href="#"><img alt="License" src="https://img.shields.io/badge/license-MIT-green.svg"></a>
 <a href="#"><img alt="Paper (TODO)" src="https://img.shields.io/badge/arXiv-TODO-red.svg"></a>
-<a href="https://huggingface.co/solis-soict/xrepotest"><img alt="HF Model" src="https://img.shields.io/badge/Hugging%20Face-XRepoTest-yellow?logo=huggingface" /></a>
+<a href="https://huggingface.co/datasets/solis-soict/xrepotest"><img alt="HF Model" src="https://img.shields.io/badge/Hugging%20Face-XRepoTest-yellow?logo=huggingface" /></a>
 <br>
 <a href="#"><img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white"></a>
 <a href="#"><img alt="Rust" src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white"></a>
@@ -67,7 +67,7 @@ For each language, XRepoTest **crawls public repositories to extract function-le
 
 ## 🏗️ Pipeline at a glance
 
-![pipeline](xrepotest_pipeline.png)
+![pipeline](asset/xrepotest_pipeline.png)
 > **Overview of the XRepoTest benchmark construction and context-aware evaluation workflow, covering repository selection, parsing, filtering, unit-test execution, and context-aware prompt construction.**
 
 ---
